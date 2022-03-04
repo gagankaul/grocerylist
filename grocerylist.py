@@ -19,8 +19,8 @@ print("Current Date and Time: " + month + "/" + day + "  " + hour + ":" + minute
 print(f"\nYou currently have {grocery[0]} and {grocery[1]}")
 
 for i in range(1,4):
-  food_item = input("Type of food to add to the grocery list: ").title()
-  grocery.append(food_item)
+  food_item = input("Type of food to add to the grocery list: ")
+  grocery.append(food_item.title())
 
 print("\nHere is your grocery list:")
 print(grocery)
@@ -62,4 +62,3 @@ grocery.insert(0,new_food)
 
 print("\nHere is what remains on your grocery list:")
 print(grocery)
-
